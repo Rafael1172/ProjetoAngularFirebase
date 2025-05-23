@@ -1,25 +1,24 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
-import { HomePage } from './home.page';
 
-import { HomePageRoutingModule } from './home-routing.module';
+import { IonicModule } from '@ionic/angular';
+
+import { SobreNosPageRoutingModule } from './sobre-nos-routing.module';
+
+import { SobreNosPage } from './sobre-nos.page';
 import { HeaderModule } from 'src/shared/components/header/header.module';
 import { FooterModule } from 'src/shared/components/footer/footer.module';
-import { SlideModule } from 'src/shared/components/slide/slide.module';
-
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule,
+    SobreNosPageRoutingModule,
     HeaderModule,
-    FooterModule,
-    SlideModule
+    FooterModule
   ],
-  declarations: [HomePage]
+  declarations: [SobreNosPage]
 })
-export class HomePageModule {}
+export class SobreNosPageModule {}
